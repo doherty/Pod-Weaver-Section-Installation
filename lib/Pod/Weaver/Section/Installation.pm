@@ -1,3 +1,4 @@
+use strict;  # keep [TestingAndDebugging::RequireUseStrict] happy
 package Pod::Weaver::Section::Installation;
 
 # ABSTRACT: add an INSTALLATION pod section
@@ -35,3 +36,7 @@ In C<weaver.ini>:
 
 This section plugin will produce a hunk of Pod that describes how to install
 the distribution.
+
+=function weave_section
+
+adds the C<INSTALLATION> section.
