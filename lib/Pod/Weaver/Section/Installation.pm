@@ -26,6 +26,12 @@ sub weave_section {
 }
 1;
 
+=pod
+
+=for test_synopsis
+1;
+__END__
+
 =head1 SYNOPSIS
 
 In C<weaver.ini>:
