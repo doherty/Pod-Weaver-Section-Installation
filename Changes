@@ -2,6 +2,7 @@ Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
     - removed weaver.ini since that's handled in Dist::Zilla's [@MARCEL] now
+    - removed unused variable
 
 1.100690  2010-03-10 16:17:55 Europe/Vienna
      - original version

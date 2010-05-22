@@ -8,7 +8,7 @@ use namespace::autoclean;
 use Moose::Autobox;
 
 sub weave_section {
-    my ($self, $document, $input) = @_;
+    my ($self, $document) = @_;
     $document->children->push(
         Pod::Elemental::Element::Nested->new(
             {   command  => 'head1',
