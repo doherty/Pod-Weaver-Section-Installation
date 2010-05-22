@@ -1,7 +1,7 @@
 use strict;  # keep [TestingAndDebugging::RequireUseStrict] happy
 package Pod::Weaver::Section::Installation;
 
-# ABSTRACT: add an INSTALLATION pod section
+# ABSTRACT: Add an INSTALLATION pod section
 use Moose;
 with 'Pod::Weaver::Role::Section';
 use namespace::autoclean;
