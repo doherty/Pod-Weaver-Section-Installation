@@ -26,11 +26,13 @@ sub weave_section {
 }
 1;
 
-=pod
+=begin :prelude
 
 =for test_synopsis
 1;
 __END__
+
+=end :prelude
 
 =head1 SYNOPSIS
 
@@ -43,6 +45,6 @@ In C<weaver.ini>:
 This section plugin will produce a hunk of Pod that describes how to install
 the distribution.
 
-=function weave_section
+=method weave_section
 
 adds the C<INSTALLATION> section.
