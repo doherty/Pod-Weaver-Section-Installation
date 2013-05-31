@@ -1,9 +1,12 @@
 use strict;  # keep [TestingAndDebugging::RequireUseStrict] happy
+use warnings;
 package Pod::Weaver::Section::Installation;
-
+# VERSION
 # ABSTRACT: Add an INSTALLATION pod section
+
 use Moose;
 with 'Pod::Weaver::Role::Section';
+
 use namespace::autoclean;
 use Moose::Autobox;
 
@@ -26,25 +29,23 @@ sub weave_section {
 }
 1;
 
-=begin :prelude
-
-=for test_synopsis
-1;
-__END__
-
-=end :prelude
-
 =head1 SYNOPSIS
 
 In C<weaver.ini>:
 
     [Installation]
 
+=for test_synopsis
+1;
+__END__
+
 =head1 OVERVIEW
 
 This section plugin will produce a hunk of Pod that describes how to install
 the distribution.
 
-=method weave_section
+=head1 METHODS
 
-adds the C<INSTALLATION> section.
+=head2 weave_section
+
+Adds the C<INSTALLATION> section.
